@@ -21,6 +21,7 @@ if not mt5.initialize(login=82825682, server="MetaQuotes-Demo", password="!o4vCh
 
 
 # Function to fetch real-time forex rates
+#check the github file
 def update_forex_rates():
     response = requests.get(COIN_MARKET_CAP_API_URL)
     forex_data = json.loads(response.text)
